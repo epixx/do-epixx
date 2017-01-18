@@ -836,7 +836,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5; }
 
 h1 {
@@ -854,18 +854,66 @@ h3 {
   font-weight: 400;
   margin-top: 0; }
 
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0; }
+
 a {
   color: #000000;
   text-decoration: none;
-  font-size: 14px;
   transition: all 0.325s ease 0s; }
+
+.bold {
+  font-weight: 700; }
+
+.italic {
+  font-style: italic; }
 
 iframe {
   border: 1px solid #dcdcdc;
   border-radius: 5px; }
 
-p {
-  font-size: 14px; }
+blockquote {
+  font-size: 16px;
+  position: relative; }
+  blockquote:after {
+    content: '';
+    background-image: url(../img/png-sprite.png);
+    background-position: 0px 0px;
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    right: 5px;
+    bottom: -12px; }
+  blockquote:before {
+    content: '';
+    background-image: url(../img/png-sprite.png);
+    background-position: 0px 0px;
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    left: -35px;
+    top: -13px;
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+.blockquote {
+  text-align: right; }
+  .blockquote blockquote {
+    text-align: left; }
+  .blockquote__author {
+    text-align: right;
+    font-size: 16px;
+    font-style: italic;
+    padding-right: 10%; }
+
+textarea {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  height: 150px; }
 
 button {
   transition: all 0.325s ease 0s; }
@@ -881,7 +929,8 @@ img {
   background: url(../img/select-arrow.svg) no-repeat transparent;
   background-position: 95% 50%;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  font-size: 16px; }
 
 select {
   width: 220px;
@@ -898,6 +947,24 @@ select {
 select > option {
   background-color: transparent;
   border-color: #dcdcdc; }
+
+input {
+  outline: none;
+  outline-style: none;
+  color: #494949;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  width: 240px;
+  height: 30px; }
+
+.error {
+  border: 1px solid #d4521b; }
+
+.error-message {
+  color: #ffffff;
+  background-color: #d4521b;
+  display: inline-block;
+  font-size: 12px; }
 
 .small-text {
   font-size: 12px; }

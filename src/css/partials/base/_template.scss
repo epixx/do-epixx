@@ -40,11 +40,24 @@ h3 {
   margin-top: 0;
 }
 
+h4 {
+  font-size: $fz-h4;
+  font-weight: 400;
+  margin-top: 0;
+}
+
 a {
   color: $link-color;
   text-decoration: none;
-  font-size: $fz-btn;
   @include transition();
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
 
 iframe {
@@ -52,8 +65,46 @@ iframe {
   border-radius: 5px;
 }
 
-p {
-  font-size: $fz-task;
+blockquote {
+  font-size: 16px;
+  position: relative;
+  &:after {
+    content: '';
+    @include sprite($s-qoute-right);
+    position: absolute;
+    right: 5px;
+    bottom: -12px;
+  }
+  &:before {
+    content: '';
+    @include sprite($s-qoute-right);
+    position: absolute;
+    left: -35px;
+    top: -13px;
+    transform: rotate(180deg);
+  }
+}
+
+.blockquote {
+  text-align: right;
+  blockquote {
+    text-align: left;
+  }
+  &__author {
+    text-align: right;
+    font-size: 16px;
+    font-style: italic;
+    padding-right: 10%;
+  }
+}
+
+
+textarea {
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  height: 150px;
 }
 
 button {
@@ -73,6 +124,7 @@ img {
   background-position: 95% 50%;
   position: relative;
   z-index: 100;
+  font-size: 16px;
 }
 
 select {
@@ -91,6 +143,27 @@ select {
 select > option {
   background-color: transparent;
   border-color: $light-grey;
+}
+
+input {
+  outline: none;
+  outline-style: none;
+  color: $grey;
+  border-radius: 5px;
+  border: 1px solid $light-grey;
+  width: 240px;
+  height: 30px;
+}
+
+.error {
+  border: 1px solid $dark-orange;
+}
+
+.error-message {
+  color: $white;
+  background-color: $dark-orange;
+  display: inline-block;
+  font-size: $fz-small;
 }
 
 .small-text {
