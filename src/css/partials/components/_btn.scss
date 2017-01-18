@@ -1,5 +1,9 @@
 // Buttons
 
+.btn-inner {
+  margin: 30px 5px;
+}
+
 .btn {
   padding: 8px 15px;
   border-radius: 5px;
@@ -53,5 +57,17 @@
   &:hover {
     background-color: $dark-orange;
   }
+}
+
+.flex-inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.flex-inner--right {
+  justify-content: flex-end;
 }
 

@@ -7,15 +7,15 @@ include ../abstracts/bemto/bemto.pug
 +b.btn
   .container
     .row
-      .col-xs-3
+      .col-xs-12.col-md-3
         h1 Типы кнопок
-      .col-xs-3
+      .col-xs-12.col-md-3
         h3 Акцентное
         +e.examlple-inner
           +b.btn--orange(href="#") Отправить на проверку
         +e.examlple-inner
           +b.btn--orange(href="#") Войти
-      .col-xs-3
+      .col-xs-12.col-md-3
         h3 Обычное
         +e.examlple-inner
           +b.btn--border-orange(href="#") Запустить
@@ -23,7 +23,7 @@ include ../abstracts/bemto/bemto.pug
           +b.btn--border-orange(href="#") Редактировать
         +e.examlple-inner
           +b.btn--border-orange(href="#") Сохранить
-      .col-xs-3
+      .col-xs-12.col-md-3
         h3 Отказ
         +e.examlple-inner
           +b.btn--dark-orange(href="#") Удалить
@@ -39,43 +39,103 @@ include ../abstracts/bemto/bemto.pug
         h1 Состояние кнопок
       .col-xs-12
         .row
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.H3.title Акцентное
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.examlple-inner
               +b.btn--orange(href="#") Войти
               +e.P Обычное состояние
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.examlple-inner
               +b.btn--orange.--passive(href="#") Войти
               +e.P Неактивное состояние
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.P состояния наведения нет, ибо на кнопку можно навести.
       .col-xs-12
         .row
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.H3.title Обычное
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.examlple-inner
               +b.btn--border-orange(href="#") Запустить
               +e.P Обычное состояние
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.examlple-inner
               +b.btn--border-orange.--passive(href="#") Запустить
               +e.P Неактивное состояние
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.P состояния наведения нет, ибо на кнопку можно навести.
       .col-xs-12
         .row
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.H3.title Отказ
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.examlple-inner
               +b.btn--dark-orange(href="#") Удалить
               +e.P Обычное состояние
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.examlple-inner
               +b.btn--dark-orange.--passive(href="#") Удалить
               +e.P Неактивное состояние
-          .col-xs-3
+          .col-xs-12.col-md-3
             +e.P состояния наведения нет, ибо на кнопку можно навести.
+
+
+// 2 blocks
+
++b.task
+  .container
+    .row
+      .col-xs-12
+        h1 Разделение на два блока
+      .col-xs-12
+        .flex-inner.flex-inner--right
+          .btn-inner
+            +b.btn--border-orange(href="#") Сохранить
+          .btn-inner
+            +b.btn--orange(href="#") Отправить на проверку
+      .col-xs-12.col-md-6
+        +e.inner
+          h1 Заголовок
+          p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+      .col-xs-12.col-md-6
+        +e.inner
+          p Любой текст
+          p Абсолютно любой
+          iframe(frameborder="0" id="example" width="100%" height="140px")
+          p.small-text вставьте ссылку на задание в поле ввода
+
+
+// 3 blocks
+
++b.task
+  .container
+    .row
+      .col-xs-12
+        h1 Разделение на три блока
+      .col-xs-12
+        .flex-inner.flex-inner--right
+          .btn-inner
+            +b.btn--border-orange(href="#") Сохранить
+          .btn-inner
+            +b.btn--orange(href="#") Отправить на проверку
+      .col-xs-12.col-md-4
+        +e.inner
+          h1 Заголовок
+          p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+      .col-xs-12.col-md-4
+        +e.inner
+          p Любой текст
+          p Абсолютно любой
+          iframe(frameborder="0" id="example" width="100%" height="140px")
+          p.small-text вставьте ссылку на задание в поле ввода
+      .col-xs-12.col-md-4
+        +e.inner
+          p Любой текст
+          p Абсолютно любой
+          form(action="" method="")
+            select
+              option(value="") Выберите..
+              option(value="") one
+              option(value="")  two
+              option(value="")  three

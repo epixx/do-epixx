@@ -25,16 +25,19 @@ body {
 h1 {
   font-size: $fz-h1;
   font-weight: 400;
+  margin-top: 0;
 }
 
 h2 {
   font-size: $fz-h2;
   font-weight: 400;
+  margin-top: 0;
 }
 
 h3 {
   font-size: $fz-h3;
   font-weight: 400;
+  margin-top: 0;
 }
 
 a {
@@ -42,6 +45,15 @@ a {
   text-decoration: none;
   font-size: $fz-btn;
   @include transition();
+}
+
+iframe {
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+}
+
+p {
+  font-size: $fz-task;
 }
 
 button {
@@ -53,3 +65,26 @@ img {
   height: auto;
   vertical-align: middle;
 }
+
+select {
+  background: url(images/select.png) no-repeat transparent;
+  background-position: 95% 50%;
+  border-radius: 5px;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  width: 220px;
+  height: 30px;
+  outline: none;
+  border-color: $light-grey;
+  color: $grey;
+}
+
+select > option {
+  background-color: transparent;
+  border-color: $light-grey;
+}
+
+.small-text {
+  font-size: $fz-small;
+}
+
