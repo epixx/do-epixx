@@ -1,0 +1,15 @@
+// @font-face {
+//     font-family: Roboto;
+//     src: url('../fonts/roboto/roboto-regular-webfont.eot');
+//     src: url('../fonts/roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+//          url('../fonts/roboto/roboto-regular-webfont.ttf') format('truetype'),
+//          url('../fonts/roboto/roboto-regular-webfont.svg#robotoregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@include font-face('Proxima Nova Regular', 'Proxima Nova', 'Proxima Nova Regular', proximanova-reg-webfont);
+@include font-face('Proxima Nova Light', 'Proxima Nova', 'Proxima Nova Light', proximanova-light_0-webfont);
+@include font-face('Proxima Nova Extrabold', 'Proxima Nova', 'Proxima Nova Extrabold', proximanova-xbold-webfont);
+@include font-face('Proxima Nova Bold', 'Proxima Nova', 'Proxima Nova Bold', proximanova-bold-webfont);

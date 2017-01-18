@@ -1,0 +1,16 @@
+
+design/
+
+.Saved/
+_arc/
+bower_components/
+node_modules/
+.DS_Store
+*.log
+*.sublime-*
+*.rar
+*.zip
+.idea
+.publish
+ex_files
+Thumbs.db

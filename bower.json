@@ -1,0 +1,20 @@
+{
+  "name": "My-task-gulp-sass-pug",
+  "description": "build front end",
+  "main": "gulpfile.js",
+  "authors": [
+    "Konstantin Bogdanov"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}
