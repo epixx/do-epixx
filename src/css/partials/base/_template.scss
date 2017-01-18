@@ -66,17 +66,26 @@ img {
   vertical-align: middle;
 }
 
-select {
-  background: url(images/select.png) no-repeat transparent;
+.select-inner {
+  width: 220px;
+  height: 30px;
+  background: url(../img/select-arrow.svg) no-repeat transparent;
   background-position: 95% 50%;
-  border-radius: 5px;
-  margin-right: 2%;
-  margin-bottom: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+select {
   width: 220px;
   height: 30px;
   outline: none;
-  border-color: $light-grey;
   color: $grey;
+  border-radius: 5px;
+  border-color: $light-grey;
+  position: relative;
+  z-index: 1;
+  background: url(../img/select-arrow.svg) no-repeat transparent;
+  background-position: 95% 50%;
 }
 
 select > option {

@@ -875,17 +875,25 @@ img {
   height: auto;
   vertical-align: middle; }
 
-select {
-  background: url(images/select.png) no-repeat transparent;
+.select-inner {
+  width: 220px;
+  height: 30px;
+  background: url(../img/select-arrow.svg) no-repeat transparent;
   background-position: 95% 50%;
-  border-radius: 5px;
-  margin-right: 2%;
-  margin-bottom: 20px;
+  position: relative;
+  z-index: 100; }
+
+select {
   width: 220px;
   height: 30px;
   outline: none;
+  color: #494949;
+  border-radius: 5px;
   border-color: #dcdcdc;
-  color: #494949; }
+  position: relative;
+  z-index: 1;
+  background: url(../img/select-arrow.svg) no-repeat transparent;
+  background-position: 95% 50%; }
 
 select > option {
   background-color: transparent;
@@ -951,6 +959,24 @@ select > option {
 
 .task__inner {
   padding-right: 25px; }
+
+.progress-bar__first-layer {
+  background-color: #dcdcdc;
+  height: 6px;
+  margin: 10px 0;
+  margin-top: 6px;
+  position: relative; }
+  .progress-bar__first-layer:after {
+    position: absolute;
+    content: '46%';
+    left: 46%;
+    top: -20px;
+    color: #000000;
+    font-size: 15px; }
+
+.progress-bar__second-layer {
+  background-color: #ff9600;
+  height: 6px; }
 
 @media (min-width: 540px) {
   .container {
