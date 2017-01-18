@@ -85,19 +85,12 @@ blockquote {
   }
 }
 
-.blockquote {
-  text-align: right;
-  blockquote {
-    text-align: left;
-  }
-  &__author {
+  .author {
     text-align: right;
     font-size: 16px;
     font-style: italic;
     padding-right: 10%;
   }
-}
-
 
 textarea {
   border: 1px solid $light-grey;
@@ -105,10 +98,14 @@ textarea {
   outline: none;
   width: 100%;
   height: 150px;
+  resize: none;
 }
 
 button {
   @include transition();
+  outline: none;
+  border: none;
+  margin-left: 10px;
 }
 
 img {
@@ -152,7 +149,8 @@ input {
   border-radius: 5px;
   border: 1px solid $light-grey;
   width: 240px;
-  height: 30px;
+  height: 34px;
+  padding-left: 5px;
 }
 
 .error {
@@ -164,6 +162,37 @@ input {
   background-color: $dark-orange;
   display: inline-block;
   font-size: $fz-small;
+}
+
+.search {
+  width: 240px;
+  height: 34px;
+  position: relative;
+  overflow: hidden;
+  &__input {
+    border-color: $orange;
+  }
+  &__btn {
+    width: 50px;
+    height: 34px;
+    position: absolute;
+    background-color: $orange;
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.search.search--passive {
+  .search__input {
+    border-color: $light-grey;
+  }
+  .search__btn {
+    background-color: $grey;
+  }
 }
 
 .small-text {
