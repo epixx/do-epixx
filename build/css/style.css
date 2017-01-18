@@ -906,6 +906,26 @@ img {
     .btn--dark-orange:hover {
       background-color: #b14417; }
 
+.btn--orange.btn--passive {
+  opacity: .6; }
+  .btn--orange.btn--passive:hover {
+    background-color: #ff9600; }
+
+.btn--border-orange.btn--passive {
+  opacity: .4;
+  color: #000000;
+  border-color: #000000;
+  background-color: #969696; }
+  .btn--border-orange.btn--passive:hover {
+    color: #000000;
+    border-color: #000000;
+    background-color: #969696; }
+
+.btn--dark-orange.btn--passive {
+  opacity: .6; }
+  .btn--dark-orange.btn--passive:hover {
+    background-color: #d4521b; }
+
 .test__text {
   font-size: 40px; }
 

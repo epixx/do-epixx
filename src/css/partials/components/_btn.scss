@@ -28,3 +28,30 @@
     }
   }
 }
+
+.btn--orange.btn--passive {
+  opacity: .6;
+  &:hover {
+    background-color: $orange;
+  }
+}
+
+.btn--border-orange.btn--passive {
+  opacity: .4;
+  color: $black;
+  border-color: $black;
+  background-color: #969696;
+  &:hover {
+    color: $black;
+    border-color: $black;
+    background-color: #969696;
+  }
+}
+
+.btn--dark-orange.btn--passive {
+  opacity: .6;
+  &:hover {
+    background-color: $dark-orange;
+  }
+}
+

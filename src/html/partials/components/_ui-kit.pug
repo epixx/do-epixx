@@ -30,5 +30,52 @@ include ../abstracts/bemto/bemto.pug
         +e.examlple-inner
           +b.btn--dark-orange(href="#") Отказаться
 
+// BTN style
 
-
++b.btn
+  .container
+    .row
+      .col-xs-12
+        h1 Состояние кнопок
+      .col-xs-12
+        .row
+          .col-xs-3
+            +e.H3.title Акцентное
+          .col-xs-3
+            +e.examlple-inner
+              +b.btn--orange(href="#") Войти
+              +e.P Обычное состояние
+          .col-xs-3
+            +e.examlple-inner
+              +b.btn--orange.--passive(href="#") Войти
+              +e.P Неактивное состояние
+          .col-xs-3
+            +e.P состояния наведения нет, ибо на кнопку можно навести.
+      .col-xs-12
+        .row
+          .col-xs-3
+            +e.H3.title Обычное
+          .col-xs-3
+            +e.examlple-inner
+              +b.btn--border-orange(href="#") Запустить
+              +e.P Обычное состояние
+          .col-xs-3
+            +e.examlple-inner
+              +b.btn--border-orange.--passive(href="#") Запустить
+              +e.P Неактивное состояние
+          .col-xs-3
+            +e.P состояния наведения нет, ибо на кнопку можно навести.
+      .col-xs-12
+        .row
+          .col-xs-3
+            +e.H3.title Отказ
+          .col-xs-3
+            +e.examlple-inner
+              +b.btn--dark-orange(href="#") Удалить
+              +e.P Обычное состояние
+          .col-xs-3
+            +e.examlple-inner
+              +b.btn--dark-orange.--passive(href="#") Удалить
+              +e.P Неактивное состояние
+          .col-xs-3
+            +e.P состояния наведения нет, ибо на кнопку можно навести.
