@@ -61,89 +61,40 @@ $mq-breakpoints: (
 //------------------------------------------------------------------------------
 
 
-// Color table 
+// Color table
 
 $white:                       #ffffff;
 $black:                       #000000;
 
-$blue:                        #669cd6;
-$light-blue:                  #8ab1db;
-$text-blue:                   #0065b1;
-
+$orange:                      #ff9600;
+$orange-hover:                #d77e00;
+$dark-orange:                 #d4521b;
+$dark-orange-hover:           #b14417;
+$grey:                        #494949;
+$light-grey:                  #dcdcdc;
 $red:                         #ee3f58;
 $pink:                        #d0365c;
-
-
-// $darkest-grey:                #222222;
-// $darker-grey:                 #333333;
-$dark-grey:                   #474747;
-$grey:                        #848484;
-$light-grey:                  #747474;
-$lighter-grey:                #7a7a7a;
-
-$pale:                        #fbf9f9;
-
-$grey-dot:                    #c5c4c4;
-$grey-nav-footer:             #b0afaf;
-$grey-border:                 #dcdcdc;
-$grey-date:                   #9d9d9d;
-$grey-footer:                 #292f37;
-$grey-marks:                  #f3f1f1;
-
-$success:                     #00ff00;
-$error:                       #ff0000;
 
 
 // Colors in use
 
 $body-bg:                     $white;
-$text-color:                  $light-grey;
-$text-black:                  $black;
-
-$link-color:                  $blue;
-
-$text-color-white:            $white;
-// $link-color-white:            $text-color-white;
-
-
-
+$text-color:                  $black;
+$link-color:                  $black;
 
 //------------------------------------------------------------------------------
 //  Typography
 //------------------------------------------------------------------------------
 
 
-$font-family:                   'Proxima Nova Regular', Helvetica, Arial, sans-serif;
-$font-family--light:            'Proxima Nova Light', Helvetica, Arial, sans-serif;
-// $font-family--semibold:         'Proxima Nova Semibold', Helvetica, Arial, sans-serif;
-$font-family--extrabold:        'Proxima Nova Extrabold', Helvetica, Arial, sans-serif;
-
-//$font-family--serif:          Georgia, "Times New Roman", Times, serif;
-//$font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
-
-
-
-
+$font-family: 'PT Sans', sans-serif;
 
 $font-size:                   16px;
-$font-size-subtitle:          20px;
-$font-size-title:             35px;
-
-$font-size-big:               18px;
-$font-size-small:             14px;
-$font-size-btn:               14px;
-$font-size-logo:              20px;
-
-
-// $font-size-glossary:          15px;
-// $font-size-subtitle:          19px;
-// $font-size-faq-title:         22px;
-// $font-size-manager:           22px;
-// $font-size-news-subtitle:     22px;
-// $font-size-glossary-letter:   22px;
-// $font-size-formtitle:         23px;
-// $font-size-supertitle:        60px;
-// $font-size-service-title:     45px;
+$fz-task:                     14px;
+$fz-btn:                      14px;
+$fz-h1:                       30px;
+$fz-h2:                       24px;
+$fz-h3:                       20px;
 
 $line-height:                 1.5;
 

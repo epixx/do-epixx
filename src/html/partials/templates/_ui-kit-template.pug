@@ -1,0 +1,15 @@
+//- @pugdoc
+  name: Main template
+  description: template for pages
+
+doctype
+html(lang='ru', prefix='og: http://ogp.me/ns#')
+
+  include ../components/_head.pug
+
+  body
+
+    main
+      block content
+
+    script(src='js/script.min.js')

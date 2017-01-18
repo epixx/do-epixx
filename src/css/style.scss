@@ -8,10 +8,7 @@
 @import "vendor/slick";
 
 // Abstracts
-// @import "partials/abstracts/functions";
 @import "partials/abstracts/mixins";
-// @import "partials/abstracts/placeholders";
-// @import "partials/abstracts/helpers";
 @import "partials/abstracts/png-sprite";
 
 // Base
@@ -20,5 +17,6 @@
 
 // Components
 
-
+@import "partials/components/btn";
+@import "partials/components/test"
 

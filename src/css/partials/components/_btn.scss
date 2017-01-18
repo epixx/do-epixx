@@ -1,0 +1,30 @@
+// Buttons
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  &__examlple-inner {
+    margin: 30px 0;
+  }
+  &--orange {
+    background-color: $orange;
+    color: $white;
+    &:hover {
+      background-color: $orange-hover;
+    }
+  }
+  &--border-orange {
+    color: $black;
+    border: 1px solid $orange;
+    &:hover {
+      color: $orange;
+    }
+  }
+  &--dark-orange {
+    background-color: $dark-orange;
+    color: $white;
+    &:hover {
+      background-color: $dark-orange-hover;
+    }
+  }
+}

@@ -17,39 +17,39 @@ body {
   margin: 0;
   background-color: $body-bg;
   color: $text-color;
-  // font-family: $font-family;
-  @include font-family('Proxima Nova Regular', normal, normal);
+  font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
 }
-// .body--full-screen{
-//   position: relative;
-//   height: 100vh;
-// }
+
+h1 {
+  font-size: $fz-h1;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: $fz-h2;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: $fz-h3;
+  font-weight: 400;
+}
 
 a {
   color: $link-color;
   text-decoration: none;
+  font-size: $fz-btn;
   @include transition();
-
-  &:hover, &:focus {
-    text-decoration: underline;
-  }
 }
 
-button{
-  @include transition();  
+button {
+  @include transition();
 }
 
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-}
-
-.blue{
-  color: $blue;
-}
-.red{
-  color: $red;
 }

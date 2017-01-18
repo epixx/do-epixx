@@ -1,0 +1,34 @@
+include ../abstracts/bemto/bemto.pug
+
+// UI-kit
+
+//BTN type
+
++b.btn
+  .container
+    .row
+      .col-xs-3
+        h1 Типы кнопок
+      .col-xs-3
+        h3 Акцентное
+        +e.examlple-inner
+          +b.btn--orange(href="#") Отправить на проверку
+        +e.examlple-inner
+          +b.btn--orange(href="#") Войти
+      .col-xs-3
+        h3 Обычное
+        +e.examlple-inner
+          +b.btn--border-orange(href="#") Запустить
+        +e.examlple-inner
+          +b.btn--border-orange(href="#") Редактировать
+        +e.examlple-inner
+          +b.btn--border-orange(href="#") Сохранить
+      .col-xs-3
+        h3 Отказ
+        +e.examlple-inner
+          +b.btn--dark-orange(href="#") Удалить
+        +e.examlple-inner
+          +b.btn--dark-orange(href="#") Отказаться
+
+
+
