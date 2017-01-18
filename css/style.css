@@ -899,6 +899,13 @@ select > option {
   background-color: transparent;
   border-color: #dcdcdc; }
 
+input {
+  outline: none;
+  outline-style: none;
+  color: #494949;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc; }
+
 .small-text {
   font-size: 12px; }
 
