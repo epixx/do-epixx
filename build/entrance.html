@@ -42,24 +42,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
   <body>
-    <!-- Header-->
-    <header class="header">
-      <div class="header__inner">
+    <main>
+      <!--Точка входа-->
+      <div class="entrance">
         <div class="container">
-          <a href="ui-kit.html">Тут сидит ui-kit</a>
-          <a href="entrance.html">А тут сидит точка входа</a>
+          <div class="entrance__inner">
+            <form class="entrance__form">
+              <h1 class="bold entrance--white">Вход в систему заданий</h1>
+              <p class="entrance__warning">Пользователь заблокирован!</p>
+              <p class="entrance__warning">Обратитесь к куратору</p>
+              <input class="entrance__login" type="text" />
+              <input class="entrance__password" type="text" />
+              <a class="entrance__recover" href="#">Восстановить пароль</a>
+              <button class="btn btn--orange btn--entrance">Вход</button>
+              <p class="entrance--white">Чтобы зарегистрироваться напишите вашему куратору.</p>
+            </form>
+          </div>
         </div>
       </div>
-    </header>
-    <main></main>
-    <!-- Footer-->
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="container">
-          <p>тут пока ничего нет</p>
-        </div>
-      </div>
-    </footer>
+    </main>
     <script src="js/script.min.js"></script>
   </body>
 </html>

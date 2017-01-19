@@ -1,0 +1,17 @@
+include ../abstracts/bemto/bemto.pug
+
+//Точка входа
+
++b.entrance
+  .container
+    +e.inner
+      +e.FORM.form
+       h1.bold.entrance--white Вход в систему заданий
+       +e.P.warning Пользователь заблокирован!
+       +e.P.warning Обратитесь к куратору
+       +e.INPUT.login
+       +e.INPUT.password
+       +e.A.recover(href="#") Восстановить пароль
+       button.btn.btn--orange.btn--entrance Вход
+       p.entrance--white Чтобы зарегистрироваться напишите вашему куратору.
+

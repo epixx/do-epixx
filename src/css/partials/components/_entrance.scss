@@ -1,0 +1,35 @@
+//Точка входа
+
+.entrance {
+  background-color: $dark-grey;
+  height: 100vh;
+  width: 100vw;
+  input {
+    display: inline-block;
+    background-color: $dark-grey;
+    color: $white;
+  }
+  &__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  &__form {
+    width: 50%;
+    height: 300px;
+    text-align: center;
+  }
+  &--white {
+    color: $white;
+  }
+  &__recover {
+    display: block;
+    color: $white;
+    text-decoration: underline;
+  }
+}
