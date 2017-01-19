@@ -5,13 +5,17 @@ include ../abstracts/bemto/bemto.pug
 +b.entrance
   .container
     +e.inner
+      h1.bold.entrance--white Вход в систему заданий
       +e.FORM.form
-       h1.bold.entrance--white Вход в систему заданий
-       +e.P.warning Пользователь заблокирован!
-       +e.P.warning Обратитесь к куратору
-       +e.INPUT.login
-       +e.INPUT.password
-       +e.A.recover(href="#") Восстановить пароль
-       button.btn.btn--orange.btn--entrance Вход
-       p.entrance--white Чтобы зарегистрироваться напишите вашему куратору.
+        +e.P.warning Пользователь заблокирован!
+        +e.P.warning Обратитесь к куратору
+        +e.input-inner
+          +e.INPUT.login
+          +e.SPAN.login--icon
+        +e.input-inner
+          +e.INPUT.password
+          +e.SPAN.password--icon
+        +e.A.recover(href="#") Восстановить пароль
+        button.btn.btn--orange.btn--entrance Вход
+        p.entrance--white Чтобы зарегистрироваться напишите вашему куратору.
 

@@ -4,11 +4,22 @@
   background-color: $dark-grey;
   height: 100vh;
   width: 100vw;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
   input {
     display: inline-block;
     background-color: $dark-grey;
     color: $white;
   }
+
   &__inner {
     display: -webkit-flex;
     display: -moz-flex;
@@ -18,10 +29,12 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
   }
+
   &__form {
-    width: 50%;
-    height: 300px;
+    width: 245px;
+    height: 245px;
     text-align: center;
   }
   &--white {
@@ -31,5 +44,21 @@
     display: block;
     color: $white;
     text-decoration: underline;
+  }
+  &__input-inner {
+    position: relative;
+  }
+  &__login {
+    overflow: hidden;
+  }
+  &__login--icon,
+  &__password--icon {
+    position: absolute;
+    content: '';
+    height: 34px;
+    width: 40px;
+    border-radius: 5px 0 0 5px ;
+    background-color: $light-grey;
+    left: 0;
   }
 }
