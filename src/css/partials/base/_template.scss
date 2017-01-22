@@ -163,7 +163,7 @@ input {
   }
 }
 
-.error {
+input.error {
   border: 1px solid $dark-orange;
 }
 
@@ -172,6 +172,21 @@ input {
   background-color: $dark-orange;
   display: inline-block;
   font-size: $fz-small;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-top: 25px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    border: 16px solid transparent;
+    border-bottom: 13px solid $dark-orange;
+    display: block;
+    width: 0;
+    height: 0;
+    top: -28px;
+    left: 12px;
+  }
 }
 
 .search {

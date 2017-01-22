@@ -966,14 +966,28 @@ input {
     border-radius: 5px;
     outline: none; }
 
-.error {
+input.error {
   border: 1px solid #d4521b; }
 
 .error-message {
   color: #ffffff;
   background-color: #d4521b;
   display: inline-block;
-  font-size: 12px; }
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-top: 25px;
+  position: relative; }
+  .error-message:before {
+    content: '';
+    position: absolute;
+    border: 16px solid transparent;
+    border-bottom: 13px solid #d4521b;
+    display: block;
+    width: 0;
+    height: 0;
+    top: -28px;
+    left: 12px; }
 
 .search {
   position: relative; }
