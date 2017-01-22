@@ -2,57 +2,59 @@ include ../abstracts/bemto/bemto.pug
 
 // Aside Nav
 +b.NAV.aside-nav.aside-nav__inner
-  +e.HEADER.header
-    +e.A.hamburger(href="#")
-      span
-    +e.H1.title
-      a(href="#") Do.Epixx
-  +e.inner--tracks
-    +e.UL.list
-      +e.LI.item--warning
-        +e.A.link(href="#")
-          +e.SPAN.track-name Веб-дизайн
-        +e.UL.sub-list
-          +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Задачи
-          +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Правки
-          +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Занятия
-          +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Тьютор
-      +e.LI.item
-        +e.A.link(href="#")
-          +e.SPAN.track-name--active HTML+CSS
-        +e.UL.sub-list
-           +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Задачи
-           +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Правки
-           +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Занятия
-           +e.LI.sub-item
-            +e.A.sub-link(href="#")
-              span Тьютор
-  +e.inner
-    +e.UL.list
-      +e.LI.item
-        +e.A.link(href="#")
-          +e.SPAN.name Календарь
-      +e.LI.item
-        +e.A.link(href="#")
-          +e.SPAN.name Команда
-      +e.LI.item
-        +e.A.link(href="#")
-          +e.SPAN.name Настройки
-  +e.inner--bottom
+  +e.wrapper
+    +e.HEADER.header
+      +e.A.hamburger(href="#")
+        span
+      +e.H1.title
+        a(href="#") Do.Epixx
+    +e.inner--tracks
+      +e.UL.list
+        +e.LI.item--warning
+          +e.A.link(href="#")
+            +e.SPAN.track-name Веб-дизайн
+          +e.UL.sub-list
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span Задачи
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span(class="aside-nav__edit") Правки
+                  +e.amount 4
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span Занятия
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span Тьютор
+        +e.LI.item
+          +e.A.link(href="#")
+            +e.SPAN.track-name--active HTML+CSS
+          +e.UL.sub-list
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span Задачи
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span Правки
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span Занятия
+            +e.LI.sub-item
+              +e.A.sub-link(href="#")
+                span Тьютор
+    +e.inner
+      +e.UL.list
+        +e.LI.item
+          +e.A.link(href="#")
+            +e.SPAN.name Календарь
+        +e.LI.item
+          +e.A.link(href="#")
+            +e.SPAN.name Команда
+        +e.LI.item
+          +e.A.link(href="#")
+            +e.SPAN.name Настройки
+  +e.wrapper
     +e.UL.list
       +e.LI.item
         +e.A.link(href="#")

@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  justify-content: space-between;
   a {
     color: #96989c;
     &:hover {
@@ -45,11 +46,27 @@
       border-bottom: 1px solid #96989c;
     }
   }
+  &__item {
+    &--warning {
+      position: relative;
+      &:before {
+        height: 10px;
+        width: 10px;
+        content: '';
+        position: absolute;
+        background-color: $dark-orange;
+        border-radius: 5px;
+        z-index: 100;
+        left: 31px;
+        top: -5px;
+      }
+    }
+  }
   &__list {
-    padding-left: 70px;
+    padding: 0;
   }
   &__sub-list {
-    padding-left: 15px;
+    padding: 0;
   }
   &__hamburger {
     position: absolute;
@@ -118,14 +135,33 @@
   }
   &__link {
     position: relative;
-    display: inline;
-
+    display: block;
+    padding-left: 70px;
     &:before {
       content: '';
       position: absolute;
       @include sprite($s-menu-icon);
-      left: -50px;
+      left: 15px;
     }
+  }
+  &__edit {
+    position: relative;
+  }
+  &__amount {
+    position: absolute;
+    content: '';
+    display: block;
+    padding: 3px 7px;
+    line-height: 1;
+    border-radius: 3px;
+    color: $white;
+    margin: 0;
+    background-color: $dark-orange;
+    right: 20px;
+    top: -5px;
+  }
+  &__sub-item {
+    padding-left: 85px;
   }
   &__track-name {
       position: relative;
