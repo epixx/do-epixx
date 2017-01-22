@@ -1,61 +1,62 @@
 include ../abstracts/bemto/bemto.pug
 
 // Aside Nav
-+b.NAV.aside-nav
++b.NAV.aside-nav.aside-nav__inner
   +e.HEADER.header
-    +e.hamburger
+    +e.A.hamburger(href="#")
+      span
     +e.H1.title
       a(href="#") Do.Epixx
+  +e.inner--tracks
+    +e.UL.list
+      +e.LI.item--warning
+        +e.A.link(href="#")
+          +e.SPAN.track-name Веб-дизайн
+        +e.UL.sub-list
+          +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Задачи
+          +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Правки
+          +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Занятия
+          +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Тьютор
+      +e.LI.item
+        +e.A.link(href="#")
+          +e.SPAN.track-name--active HTML+CSS
+        +e.UL.sub-list
+           +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Задачи
+           +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Правки
+           +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Занятия
+           +e.LI.sub-item
+            +e.A.sub-link(href="#")
+              span Тьютор
   +e.inner
     +e.UL.list
       +e.LI.item
-        a(href="#")
-          span Веб-дизайн
-        +e.UL.sub-list
-          +e.LI.sub-item
-            a(href="#")
-              span Задачи
-          +e.LI.sub-item
-            a(href="#")
-              span Правки
-          +e.LI.sub-item
-            a(href="#")
-              span Занятия
-          +e.LI.sub-item
-            a(href="#")
-              span Тьютор
+        +e.A.link(href="#")
+          +e.SPAN.name Календарь
       +e.LI.item
-        a(href="#")
-          span HTML+CSS
-        +e.UL.sub-list
-           +e.LI.sub-item
-            a(href="#")
-              span Задачи
-           +e.LI.sub-item
-            a(href="#")
-              span Правки
-           +e.LI.sub-item
-            a(href="#")
-              span Занятия
-           +e.LI.sub-item
-            a(href="#")
-              span Тьютор
-  +e.inner
-    +e.UL.list
+        +e.A.link(href="#")
+          +e.SPAN.name Команда
       +e.LI.item
-        a(href="#")
-          span Календарь
-      +e.LI.item
-        a(href="#")
-          span Команда
-      +e.LI.item
-        a(href="#")
-          span Настройки
+        +e.A.link(href="#")
+          +e.SPAN.name Настройки
   +e.inner--bottom
     +e.UL.list
       +e.LI.item
-        a(href="#")
-          span Профиль
+        +e.A.link(href="#")
+          +e.SPAN.name Профиль
       +e.LI.item
-        a(href="#")
-          span Выход
+        +e.A.link(href="#")
+          +e.SPAN.name Выход

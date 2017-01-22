@@ -1,14 +1,154 @@
 // Боковое меню
 
 .aside-nav {
-  width: 285px;
+  width: 215px;
   height: 100vh;
   background-color: $dark-blue;
-  padding: 25px 15px;
+  padding: 20px 0;
+  color: #96989c;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   a {
-    color: $light-grey;
+    color: #96989c;
     &:hover {
-      color: $lightest-grey;
+      color: $light-grey;
+    }
+  }
+  ul, li {
+    list-style-type: none;
+  }
+  span {
+    font-size: $fz-h4;
+    margin: 7px 0;
+    display: block;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 70px;
+    margin-bottom: 15px;
+  }
+  &__inner {
+    &--bottom {
+      position: absolute;
+      bottom: 0;
+    }
+    &--tracks {
+      border-top: 1px solid #96989c;
+      border-bottom: 1px solid #96989c;
+    }
+  }
+  &__list {
+    padding-left: 70px;
+  }
+  &__sub-list {
+    padding-left: 15px;
+  }
+  &__hamburger {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+    user-select: none;
+
+  > span {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    height: 2px;
+    background: #96989c;
+    border-radius: .2rem;
+    position: relative;
+    transition: background .3s .5s;
+
+    &:before,
+    &:after {
+      width: 100%;
+      height: 2px;
+      background: #96989c;
+      border-radius: .2rem;
+      position: absolute;
+      left: 0;
+      content: '';
+      transform-origin: 50% 50%;
+      transition: top .3s .6s, transform .3s;
+    }
+
+    &:before {
+      top: 5px;
+    }
+
+    &:after {
+      top: -5px;
+    }
+  }
+
+  &--close {
+    > span {
+      transition: background .3s 0;
+      background: transparent;
+
+      &:before,
+      &:after {
+        transition: top .3s, transform .3s .5s;
+        top: 0;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+        }
+      }
+    }
+  }
+  &__link {
+    position: relative;
+    display: inline;
+
+    &:before {
+      content: '';
+      position: absolute;
+      @include sprite($s-menu-icon);
+      left: -50px;
+    }
+  }
+  &__track-name {
+      position: relative;
+      &:after {
+        content: '';
+        height: 8px;
+        width: 8px;
+        border: 2px solid #96989c;
+        transform: rotate(45deg);
+        position: absolute;
+        border-bottom: none;
+        border-left: none;
+        right: 10%;
+        top: 7px;
+    }
+    &--active {
+      &:after {
+        transform: rotate(135deg);
+      }
     }
   }
 }
+
+  .aside-nav__name.aside-nav__name--hidden {
+    visibility: hidden; //Вешается на span, когда меню становится 65px
+  }

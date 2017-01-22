@@ -9,22 +9,33 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$s-menu-icon-name: 's-menu-icon';
+$s-menu-icon-x: 0px;
+$s-menu-icon-y: 0px;
+$s-menu-icon-offset-x: 0px;
+$s-menu-icon-offset-y: 0px;
+$s-menu-icon-width: 25px;
+$s-menu-icon-height: 19px;
+$s-menu-icon-total-width: 47px;
+$s-menu-icon-total-height: 19px;
+$s-menu-icon-image: '../img/png-sprite.png';
+$s-menu-icon: (0px, 0px, 0px, 0px, 25px, 19px, 47px, 19px, '../img/png-sprite.png', 's-menu-icon', );
 $s-qoute-right-name: 's-qoute-right';
-$s-qoute-right-x: 0px;
+$s-qoute-right-x: 27px;
 $s-qoute-right-y: 0px;
-$s-qoute-right-offset-x: 0px;
+$s-qoute-right-offset-x: -27px;
 $s-qoute-right-offset-y: 0px;
 $s-qoute-right-width: 20px;
 $s-qoute-right-height: 14px;
-$s-qoute-right-total-width: 20px;
-$s-qoute-right-total-height: 14px;
+$s-qoute-right-total-width: 47px;
+$s-qoute-right-total-height: 19px;
 $s-qoute-right-image: '../img/png-sprite.png';
-$s-qoute-right: (0px, 0px, 0px, 0px, 20px, 14px, 20px, 14px, '../img/png-sprite.png', 's-qoute-right', );
-$spritesheet-width: 20px;
-$spritesheet-height: 14px;
+$s-qoute-right: (27px, 0px, -27px, 0px, 20px, 14px, 47px, 19px, '../img/png-sprite.png', 's-qoute-right', );
+$spritesheet-width: 47px;
+$spritesheet-height: 19px;
 $spritesheet-image: '../img/png-sprite.png';
-$spritesheet-sprites: ($s-qoute-right, );
-$spritesheet: (20px, 14px, '../img/png-sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($s-menu-icon, $s-qoute-right, );
+$spritesheet: (47px, 19px, '../img/png-sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
