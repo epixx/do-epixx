@@ -136,13 +136,10 @@ include ../abstracts/bemto/bemto.pug
           p Любой текст
           p Абсолютно любой
           form(action="" method="")
-            .select-inner
-              select
-                option(value="") Выберите..
-                option(value="") one
-                option(value="")  two
-                option(value="")  three
-          h3 придумать как убрать этот сраный треугольник!
+            select 1
+              option one
+              option one
+              option one
 
 
 // Progress bar
@@ -188,11 +185,10 @@ include ../abstracts/bemto/bemto.pug
     .col-xs-12.col-md-6
       h1 Выпадающий спсиок
       form(action="" method="")
-        div(id="selectBox")
-          div(class="arrow")
-          p(class="valueTag" name="select") Выберите...
-          ul(id="selectMenuBox")
-            li(class="option") Январь
+        select 1
+          option one
+          option one
+          option one
     .col-xs-12.col-md-6
       h1 Поиск
       +b.search

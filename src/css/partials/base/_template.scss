@@ -248,3 +248,11 @@ input.error {
   font-size: $fz-small;
 }
 
+
+.caret{
+    background-image: url(https://rawgit.com/epixx/do-epixx/master/src/img/select-arrow.svg);
+     background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+    border: none;
+}
