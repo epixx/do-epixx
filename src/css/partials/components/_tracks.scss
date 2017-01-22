@@ -1,0 +1,120 @@
+// Список треков
+
+.page-container {
+  display: flex;
+}
+main {
+  width: 100%;
+}
+.track-header {
+  min-height: 50px;
+  background-color: #e8e8e8;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.track-contant {
+  padding: 30px;
+  &__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 85%;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  &__pin-box {
+    flex: 0 0 5%;
+    display: flex;
+    align-items: center;
+  }
+  &__title-box {
+    flex: 0 0 55%;
+    display: flex;
+    align-items: center;
+  }
+  &__complexity-box {
+    flex: 0 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+  &__status-box {
+    flex: 0 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__comment-box {
+    flex: 0 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 7%;
+  }
+  &__pin {
+    height: 10px;
+    width: 10px;
+    background-color: $orange;
+    border-radius: 5px;
+  }
+  &__complexity {
+    margin: auto 7px;
+  }
+  &__status {
+    color: #aaabae;
+  }
+  &__comment {
+    position: relative;
+    background-color: #aaabae;
+    color: $white;
+    padding: 2px 14px;
+    border-radius: 5px 5px 0 5px;
+    &:after {
+      border: 15px solid transparent;
+      border-bottom: 0px solid transparent;
+      border-right: 0px solid transparent;
+      border-left: 20px solid #aaabae;
+      content: '';
+      position: absolute;
+      transform: rotate(180deg);
+      bottom: -8px;
+      right: 0;
+      @include transition();
+    }
+    &:hover {
+      background-color: #aaabae;
+      &:after {
+        border-left: 20px solid #aaabae;
+      }
+    }
+  }
+}
+
+.track-contant__wrapper--done  {
+  .track-contant__pin {
+    background-color: #aaabae;
+  }
+  .track-contant__title {
+    color: #aaabae;
+  }
+}
+
+.track-contant__comment--warning {
+  position: relative;
+  background-color: $dark-orange;
+  &:after {
+    border-left: 20px solid $dark-orange;
+  }
+  &:hover {
+    background-color: $orange;
+    &:after {
+      border-left: 20px solid $orange;
+    }
+  }
+}

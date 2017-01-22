@@ -1,0 +1,77 @@
+include ../abstracts/bemto/bemto.pug
+
+//Список треков
+
++b.HEADER.track-header
+  +e.wrapper
+    h3.bold 4.Инфостиль
+    +b.progress-bar
+      +e.first-layer
+        +e.second-layer(style="width: 46%")
+  +e.wrapper
+    form(action="" method="")
+      select 1
+        option one
+        option one
+        option one
++b.track-contant
+  h1.bold Задачи
+  +e.wrapper--done
+    +e.pin-box
+      +e.pin
+    +e.title-box
+      +e.A.title(href="#") 1. Привести к информационному стилю
+    +e.complexity-box
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+    +e.status-box
+      +e.P.status Выполнено
+    +e.comment-box
+      +e.A.comment(href="#") 0
+  +e.wrapper
+    +e.pin-box
+      +e.pin
+    +e.title-box
+      +e.A.title(href="#") 2. Привести к информационному стилю
+    +e.complexity-box
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+    +e.status-box
+      +e.P.status На проверке
+    +e.comment-box
+      +e.A.comment(href="#") 0
+  +e.wrapper
+    +e.pin-box
+      +e.pin
+    +e.title-box
+      +e.A.title(href="#") 3. Привести к информационному стилю
+    +e.complexity-box
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+    +e.status-box
+      +e.P.status Выполняется
+    +e.comment-box
+      +e.A.comment--warning(href="#") 55
+  +e.wrapper
+    +e.pin-box
+      +e.pin
+    +e.title-box
+      +e.A.title(href="#") 4. Привести к информационному стилю
+    +e.complexity-box
+    +e.status-box
+      +e.P.status Не выполнялось
+    +e.comment-box
+      +e.A.comment(href="#") 0
+  +e.wrapper
+    +e.pin-box
+      +e.pin
+    +e.title-box
+      +e.A.title(href="#") 5. Привести к информационному стилю
+    +e.complexity-box
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
+    +e.status-box
+      +e.P.status Выполняется
+    +e.comment-box
+      +e.A.comment--warning(href="#") 4

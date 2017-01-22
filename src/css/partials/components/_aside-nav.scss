@@ -1,7 +1,7 @@
 // Боковое меню
 
 .aside-nav {
-  width: 215px;
+  flex: 0 0 215px;
   height: 100vh;
   background-color: $dark-blue;
   padding: 20px 0;
@@ -67,6 +67,9 @@
   }
   &__sub-list {
     padding: 0;
+  }
+  &__sub-list {
+    display: block;
   }
   &__hamburger {
     position: absolute;
