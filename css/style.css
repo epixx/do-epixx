@@ -1415,8 +1415,105 @@ main {
 
 .track-contant {
   padding: 30px; }
+  .track-contant__wrapper {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
+    border-bottom: 1px solid #e7e7e7; }
+  .track-contant__pin-box {
+    -ms-flex: 0 0 5%;
+        flex: 0 0 5%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .track-contant__title-box {
+    -ms-flex: 0 0 55%;
+        flex: 0 0 55%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .track-contant__complexity-box {
+    -ms-flex: 0 0 15%;
+        flex: 0 0 15%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    margin-right: 15px; }
+  .track-contant__status-box {
+    -ms-flex: 0 0 15%;
+        flex: 0 0 15%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .track-contant__comment-box {
+    -ms-flex: 0 0 15%;
+        flex: 0 0 15%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    padding-right: 7%; }
+  .track-contant__pin {
+    height: 10px;
+    width: 10px;
+    background-color: #ff9600;
+    border-radius: 5px; }
+  .track-contant__complexity {
+    margin: auto 7px; }
+  .track-contant__status {
+    color: #aaabae; }
+  .track-contant__comment {
+    position: relative;
+    background-color: #aaabae;
+    color: #ffffff;
+    padding: 2px 14px;
+    border-radius: 5px 5px 0 5px; }
+    .track-contant__comment:after {
+      border: 15px solid transparent;
+      border-bottom: 0px solid transparent;
+      border-right: 0px solid transparent;
+      border-left: 20px solid #aaabae;
+      content: '';
+      position: absolute;
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+      bottom: -8px;
+      right: 0;
+      transition: all 0.325s ease 0s; }
+    .track-contant__comment:hover {
+      background-color: #aaabae; }
+      .track-contant__comment:hover:after {
+        border-left: 20px solid #aaabae; }
 
-@media (min-width: 540px) {
+.track-contant__wrapper--done .track-contant__pin {
+  background-color: #aaabae; }
+
+.track-contant__wrapper--done .track-contant__title {
+  color: #aaabae; }
+
+.track-contant__comment--warning {
+  position: relative;
+  background-color: #d4521b; }
+  .track-contant__comment--warning:after {
+    border-left: 20px solid #d4521b; }
+  .track-contant__comment--warning:hover {
+    background-color: #ff9600; }
+    .track-contant__comment--warning:hover:after {
+      border-left: 20px solid #ff9600; }
+    @media (min-width: 540px) {
   .container {
     max-width: 480px; }
   .row-sm-top {
@@ -1641,8 +1738,7 @@ main {
   .flex-items-sm-between {
     -ms-flex-pack: justify;
     justify-content: space-between; } }
-
-@media (min-width: 768px) {
+    @media (min-width: 768px) {
   .container {
     max-width: 700px; }
   .row-md-top {
@@ -1867,8 +1963,7 @@ main {
   .flex-items-md-between {
     -ms-flex-pack: justify;
     justify-content: space-between; } }
-
-@media (min-width: 1024px) {
+    @media (min-width: 1024px) {
   .container {
     max-width: 950px; }
   .row-lg-top {
@@ -2093,8 +2188,7 @@ main {
   .flex-items-lg-between {
     -ms-flex-pack: justify;
     justify-content: space-between; } }
-
-@media (min-width: 1280px) {
+    @media (min-width: 1280px) {
   .container {
     max-width: 1180px; }
   .row-xl-top {
@@ -2319,26 +2413,22 @@ main {
   .flex-items-xl-between {
     -ms-flex-pack: justify;
     justify-content: space-between; } }
-
-@media (max-width: 539px) {
+    @media (max-width: 539px) {
   .hidden-xs-down {
     display: none; }
   .visible-xs-down {
     display: block; } }
-
-@media (max-width: 767px) {
+    @media (max-width: 767px) {
   .hidden-sm-down {
     display: none; }
   .visible-sm-down {
     display: block; } }
-
-@media (max-width: 1023px) {
+    @media (max-width: 1023px) {
   .hidden-md-down {
     display: none; }
   .visible-md-down {
     display: block; } }
-
-@media (max-width: 1279px) {
+    @media (max-width: 1279px) {
   .hidden-lg-down {
     display: none; }
   .visible-lg-down {
