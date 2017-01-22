@@ -40,6 +40,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
   </head>
   <body>
     <main>
@@ -286,14 +287,14 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <p>Заголовок</p>
+            <p>По умолчанию (стили на тэгах)</p>
             <form>
               <input>
             </form>
-            <p>Заголовок</p>
+            <p>Ошибка (стили на тэгах)</p>
             <form>
               <input class="error">
-              <p class="error-message">Пустое поле! Вставь ссылку! ПОТОМ ДОДЕЛАТЬ</p>
+              <div class="error-message">Пустое поле! Вставь ссылку!</div>
             </form>
           </div>
         </div>
@@ -302,40 +303,35 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-6">
-            <h1>Выпадающий спсиок
-              <form action="" method="">
-                <div class="select-inner">
-                  <select>
-                    <option value="">Выберите..</option>
-                    <option value="">one</option>
-                    <option value=""> two</option>
-                    <option value=""> three</option>
-                  </select>
-                </div>
-              </form>
-            </h1>
+            <h1>Выпадающий спсиок</h1>
+            <form action="" method="">
+              <div id="selectBox">
+                <div class="arrow"></div>
+                <p class="valueTag" name="select">Выберите...</p>
+                <ul id="selectMenuBox">
+                  <li class="option">Январь</li>
+                  <li class="option">Январь</li>
+                  <li class="option">Январь</li>
+                  <li class="option">Январь</li>
+                </ul>
+              </div>
+            </form>
           </div>
           <div class="col-xs-12 col-md-6">
             <h1>Поиск</h1>
-            <p>По умолчанию</p>
             <div class="search">
               <form class="search__form">
                 <input class="search__input" type="text" />
-                <button class="search__btn"></button>
-              </form>
-            </div>
-            <p>Активное состояние</p>
-            <div class="search">
-              <form class="search__form">
-                <input class="search__input" type="text" />
-                <button class="search__btn"></button>
+                <button class="search__btn" type="submit"></button>
               </form>
             </div>
             <p>Непонятная хрень с кнопокой *уй</p>
-            <form>
-              <input>
-              <button class="btn btn--orange" type="submit">Отправить на проверку</button>
-            </form>
+            <div class="send">
+              <form class="send__form">
+                <input class="send__input" type="text" />
+                <button class="send__btn btn btn btn--orange" type="submit">Отправить на проверку</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
