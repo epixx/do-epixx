@@ -1239,7 +1239,8 @@ input.error {
   border: 1px solid #d4521b; }
 
 .aside-nav {
-  width: 215px;
+  -ms-flex: 0 0 215px;
+      flex: 0 0 215px;
   height: 100vh;
   background-color: #303641;
   padding: 20px 0;
@@ -1411,6 +1412,9 @@ main {
   padding: 15px 30px;
   -ms-flex-align: center;
       align-items: center; }
+
+.track-contant {
+  padding: 30px; }
 
 @media (min-width: 540px) {
   .container {
