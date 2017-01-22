@@ -8,13 +8,12 @@ html(lang='ru', prefix='og: http://ogp.me/ns#')
   include ../components/_head.pug
 
   body
-
-    include ../components/_header.pug
-
-    main
-      block content
+    .page-container
+      include ../components/_aside-nav.pug
+      main
+        block content
 
     include ../components/_footer.pug
-    
+
     script(src='js/script.min.js')
 
