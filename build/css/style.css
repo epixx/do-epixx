@@ -1477,9 +1477,9 @@ input.error {
   width: 50%; }
 
 .caret {
-  background-image: url(http://placehold.it/10x10);
+  background-image: url(../img/select-arrow.svg);
   background-repeat: no-repeat;
-  padding: 5px;
+  padding: 10px;
   padding-top: 0;
   border: none !important; }
 
