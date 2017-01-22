@@ -1291,6 +1291,8 @@ input.error {
     padding: 0; }
   .aside-nav__sub-list {
     padding: 0; }
+  .aside-nav__sub-list {
+    display: block; }
   .aside-nav__hamburger {
     position: absolute;
     z-index: 1;
@@ -1389,6 +1391,10 @@ input.error {
 
 .aside-nav__name.aside-nav__name--hidden {
   visibility: hidden; }
+
+.page-container {
+  display: -ms-flexbox;
+  display: flex; }
 
 @media (min-width: 540px) {
   .container {
