@@ -1273,6 +1273,18 @@ input.error {
   .aside-nav__inner--tracks {
     border-top: 1px solid #96989c;
     border-bottom: 1px solid #96989c; }
+  .aside-nav__item--warning {
+    position: relative; }
+    .aside-nav__item--warning:before {
+      height: 10px;
+      width: 10px;
+      content: '';
+      position: absolute;
+      background-color: #d4521b;
+      border-radius: 5px;
+      z-index: 100;
+      left: -34px;
+      top: -5px; }
   .aside-nav__list {
     padding-left: 70px; }
   .aside-nav__sub-list {
