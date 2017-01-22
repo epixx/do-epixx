@@ -196,18 +196,15 @@ include ../abstracts/bemto/bemto.pug
               option(value="")  three
     .col-xs-12.col-md-6
       h1 Поиск
-      p По умолчанию
-      +b.FORM.search.--passive
-        +e.INPUT.input
-        +e.BUTTON.btn
-      p Активное состояние
-      +b.FORM.search
-        +e.INPUT.input
-        +e.BUTTON.btn
+      +b.search
+        +e.FORM.form
+          +e.INPUT.input
+          +e.BUTTON.btn(type="submit")
       p Непонятная хрень с кнопокой *уй
-      form
-        input
-        button(type="submit" class="btn btn--orange") Отправить на проверку
+      +b.send
+        +e.FORM.form
+          +e.INPUT.input
+          +e.BUTTON.btn(type="submit" class="btn btn--orange") Отправить на проверку
 
 
 //Text Styles
