@@ -187,13 +187,12 @@ include ../abstracts/bemto/bemto.pug
   .row
     .col-xs-12.col-md-6
       h1 Выпадающий спсиок
-        form(action="" method="")
-          .select-inner
-            select
-              option(value="") Выберите..
-              option(value="") one
-              option(value="")  two
-              option(value="")  three
+      form(action="" method="")
+        div(id="selectBox")
+          div(class="arrow")
+          p(class="valueTag" name="select") Выберите...
+          ul(id="selectMenuBox")
+            li(class="option") Январь
     .col-xs-12.col-md-6
       h1 Поиск
       +b.search

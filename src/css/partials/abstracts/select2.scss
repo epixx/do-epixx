@@ -1,0 +1,81 @@
+div#selectBox {
+  position: relative;
+  height: 35px;
+  border-radius: 5px;
+  border: solid 1px $light-grey;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  overflow: hidden;
+  transition: .3s;
+}
+div#selectBox p.valueTag {
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: .2s;
+  height: 40px;
+  margin: 0;
+  color: $grey;
+}
+
+div#selectBox > ul {
+  padding-left: 0;
+}
+
+div#selectBox .arrow {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid $black;
+  transform: rotate(45deg);
+  border-right: none;
+  border-bottom: none;
+}
+
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0.5em;
+  position: absolute;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  position: absolute;
+  z-index: -2;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #888;
+}
+
+ul#selectMenuBox {
+ background: #fff;
+ transition: .3s;
+ width: 100%;
+ height: 200px;
+ overflow-y: auto;
+ overflow-x: hidden !important;
+ position: absolute;
+ margin-top: 00px;
+ display: block;
+
+}
+
+ul#selectMenuBox > li {
+  display: block;
+  border-radius: 00px;
+  cursor: pointer;
+}
+
+ul#selectMenuBox > li.option {
+  color: gray;
+  padding: 10px 15px;
+}
+
+ul#selectMenuBox > li.option:hover {
+  color: #333;
+  background: #e1e1e1;
+  transition: .2s;
+}
