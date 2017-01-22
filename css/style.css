@@ -880,7 +880,7 @@ blockquote {
   blockquote:after {
     content: '';
     background-image: url(../img/png-sprite.png);
-    background-position: 0px 0px;
+    background-position: -27px 0px;
     width: 20px;
     height: 14px;
     position: absolute;
@@ -889,7 +889,7 @@ blockquote {
   blockquote:before {
     content: '';
     background-image: url(../img/png-sprite.png);
-    background-position: 0px 0px;
+    background-position: -27px 0px;
     width: 20px;
     height: 14px;
     position: absolute;
@@ -1236,6 +1236,128 @@ input.error {
 .entrance .entrance__login.has-error,
 .entrance .entrance__password.has-error {
   border: 1px solid #d4521b; }
+
+.aside-nav {
+  width: 215px;
+  height: 100vh;
+  background-color: #303641;
+  padding: 20px 0;
+  color: #96989c;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  overflow: hidden; }
+  .aside-nav a {
+    color: #96989c; }
+    .aside-nav a:hover {
+      color: #dcdcdc; }
+  .aside-nav ul, .aside-nav li {
+    list-style-type: none; }
+  .aside-nav span {
+    font-size: 16px;
+    margin: 7px 0;
+    display: block; }
+  .aside-nav h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 70px;
+    margin-bottom: 15px; }
+  .aside-nav__inner--bottom {
+    position: absolute;
+    bottom: 0; }
+  .aside-nav__inner--tracks {
+    border-top: 1px solid #96989c;
+    border-bottom: 1px solid #96989c; }
+  .aside-nav__list {
+    padding-left: 70px; }
+  .aside-nav__sub-list {
+    padding-left: 15px; }
+  .aside-nav__hamburger {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .aside-nav__hamburger > span {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 100%;
+      height: 2px;
+      background: #96989c;
+      border-radius: .2rem;
+      position: relative;
+      transition: background .3s .5s; }
+      .aside-nav__hamburger > span:before, .aside-nav__hamburger > span:after {
+        width: 100%;
+        height: 2px;
+        background: #96989c;
+        border-radius: .2rem;
+        position: absolute;
+        left: 0;
+        content: '';
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        transition: top .3s .6s, transform .3s; }
+      .aside-nav__hamburger > span:before {
+        top: 5px; }
+      .aside-nav__hamburger > span:after {
+        top: -5px; }
+    .aside-nav__hamburger--close > span {
+      transition: background .3s 0;
+      background: transparent; }
+      .aside-nav__hamburger--close > span:before, .aside-nav__hamburger--close > span:after {
+        transition: top .3s, transform .3s .5s;
+        top: 0; }
+      .aside-nav__hamburger--close > span:before {
+        transform: rotate3d(0, 0, 1, 45deg); }
+      .aside-nav__hamburger--close > span:after {
+        transform: rotate3d(0, 0, 1, -45deg); }
+  .aside-nav__link {
+    position: relative;
+    display: inline; }
+    .aside-nav__link:before {
+      content: '';
+      position: absolute;
+      background-image: url(../img/png-sprite.png);
+      background-position: 0px 0px;
+      width: 25px;
+      height: 19px;
+      left: -50px; }
+  .aside-nav__track-name {
+    position: relative; }
+    .aside-nav__track-name:after {
+      content: '';
+      height: 8px;
+      width: 8px;
+      border: 2px solid #96989c;
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      position: absolute;
+      border-bottom: none;
+      border-left: none;
+      right: 10%;
+      top: 7px; }
+    .aside-nav__track-name--active:after {
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg); }
+
+.aside-nav__name.aside-nav__name--hidden {
+  visibility: hidden; }
 
 @media (min-width: 540px) {
   .container {
