@@ -1,0 +1,14 @@
+// Боковое меню
+
+.aside-nav {
+  width: 285px;
+  height: 100vh;
+  background-color: $dark-blue;
+  padding: 25px 15px;
+  a {
+    color: $light-grey;
+    &:hover {
+      color: $lightest-grey;
+    }
+  }
+}
