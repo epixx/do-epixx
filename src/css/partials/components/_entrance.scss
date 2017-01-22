@@ -13,13 +13,32 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
-
+  text-align: center;
   input {
     display: inline-block;
     background-color: $dark-grey;
     color: $white;
+    border: 1px solid $darkest-grey;
   }
-
+  &__warning-inner {
+    height: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: $dark-orange;
+    &:before {
+      content: '!';
+      font-size: 30px;
+      position: absolute;
+    }
+    p {
+      margin: 0;
+    }
+  }
   &__inner {
     display: -webkit-flex;
     display: -moz-flex;
@@ -31,14 +50,14 @@
     align-content: center;
     flex-direction: column;
   }
-
   &__form {
-    width: 245px;
-    height: 245px;
+    max-width: 250px;
+    height: 100%;
     text-align: center;
   }
   &--white {
     color: $white;
+    margin: 0;
   }
   &__recover {
     display: block;
@@ -47,18 +66,75 @@
   }
   &__input-inner {
     position: relative;
-  }
-  &__login {
-    overflow: hidden;
-  }
-  &__login--icon,
-  &__password--icon {
+    margin: 15px 0;
+    z-index: 10;
+    &:nth-of-type(2) {
+      margin-bottom: 5px;
+    }
+    &:before {
     position: absolute;
     content: '';
-    height: 34px;
+    height: 32px;
     width: 40px;
-    border-radius: 5px 0 0 5px ;
-    background-color: $light-grey;
-    left: 0;
+    border-radius: 4px 0 0 4px ;
+    background-color: $darkest-grey;
+    left: 1px;
+    top: 1px;
+    background-repeat: no-repeat;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 4%;
+    }
+    &--login {
+      &:after {
+        background-image: url(../img/login.png);
+        height: 21px;
+        width: 23px;
+        top: 20%;
+      }
+    }
+    &--password {
+      &:after {
+        background-image: url(../img/password.png);
+        height: 25px;
+        width: 23px;
+        top: 12%;
+      }
+    }
   }
+
+  &__login,
+  &__password {
+    padding-left: 50px;
+    &--error {
+      border-color: $dark-orange;
+    }
+  }
+
+  &__password--icon {
+    &:before {
+      background-image: url(../img/password.png);
+      height: 25px;
+      width: 23px;
+      top: 12%;
+    }
+  }
+
+  &__recover {
+    font-size: $fz-small;
+    text-decoration: underline;
+    float: right;
+    &:hover {
+      color: $light-grey;
+    }
+  }
+}
+
+
+.entrance .entrance__login.has-error,
+.entrance .entrance__password.has-error{
+  border: 1px solid $dark-orange;
 }

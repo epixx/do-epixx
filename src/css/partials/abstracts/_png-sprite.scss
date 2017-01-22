@@ -9,44 +9,22 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
-$s-login-name: 's-login';
-$s-login-x: 0px;
-$s-login-y: 0px;
-$s-login-offset-x: 0px;
-$s-login-offset-y: 0px;
-$s-login-width: 21px;
-$s-login-height: 25px;
-$s-login-total-width: 43px;
-$s-login-total-height: 41px;
-$s-login-image: '../img/png-sprite.png';
-$s-login: (0px, 0px, 0px, 0px, 21px, 25px, 43px, 41px, '../img/png-sprite.png', 's-login', );
-$s-password-name: 's-password';
-$s-password-x: 23px;
-$s-password-y: 0px;
-$s-password-offset-x: -23px;
-$s-password-offset-y: 0px;
-$s-password-width: 20px;
-$s-password-height: 25px;
-$s-password-total-width: 43px;
-$s-password-total-height: 41px;
-$s-password-image: '../img/png-sprite.png';
-$s-password: (23px, 0px, -23px, 0px, 20px, 25px, 43px, 41px, '../img/png-sprite.png', 's-password', );
 $s-qoute-right-name: 's-qoute-right';
 $s-qoute-right-x: 0px;
-$s-qoute-right-y: 27px;
+$s-qoute-right-y: 0px;
 $s-qoute-right-offset-x: 0px;
-$s-qoute-right-offset-y: -27px;
+$s-qoute-right-offset-y: 0px;
 $s-qoute-right-width: 20px;
 $s-qoute-right-height: 14px;
-$s-qoute-right-total-width: 43px;
-$s-qoute-right-total-height: 41px;
+$s-qoute-right-total-width: 20px;
+$s-qoute-right-total-height: 14px;
 $s-qoute-right-image: '../img/png-sprite.png';
-$s-qoute-right: (0px, 27px, 0px, -27px, 20px, 14px, 43px, 41px, '../img/png-sprite.png', 's-qoute-right', );
-$spritesheet-width: 43px;
-$spritesheet-height: 41px;
+$s-qoute-right: (0px, 0px, 0px, 0px, 20px, 14px, 20px, 14px, '../img/png-sprite.png', 's-qoute-right', );
+$spritesheet-width: 20px;
+$spritesheet-height: 14px;
 $spritesheet-image: '../img/png-sprite.png';
-$spritesheet-sprites: ($s-login, $s-password, $s-qoute-right, );
-$spritesheet: (43px, 41px, '../img/png-sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($s-qoute-right, );
+$spritesheet: (20px, 14px, '../img/png-sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

@@ -49,15 +49,15 @@
           <div class="entrance__inner">
             <h1 class="bold entrance--white">Вход в систему заданий</h1>
             <form class="entrance__form">
-              <p class="entrance__warning">Пользователь заблокирован!</p>
-              <p class="entrance__warning">Обратитесь к куратору</p>
-              <div class="entrance__input-inner">
-                <input class="entrance__login" type="text" />
-                <span class="entrance__login entrance__login--icon"></span>
+              <div class="entrance__warning-inner">
+                <p>Пользователь заблокирован!</p>
+                <p>Обратитесь к куратору</p>
               </div>
-              <div class="entrance__input-inner">
+              <div class="entrance__input-inner entrance__input-inner--login">
+                <input class="entrance__login has-error" type="text" />
+              </div>
+              <div class="entrance__input-inner entrance__input-inner--password">
                 <input class="entrance__password" type="text" />
-                <span class="entrance__password entrance__password--icon"></span>
               </div>
               <a class="entrance__recover" href="#">Восстановить пароль</a>
               <button class="btn btn--orange btn--entrance">Вход</button>
