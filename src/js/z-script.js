@@ -3,5 +3,17 @@
 
 
 jQuery(document).ready(function($){
-  $("select").selectpicker();
+
+  $(function() {
+    $('select').selectric();
+    
+    $('select').on('selectric-open', function(event, element, selectric){
+        $('.selectric .button').addClass('button--open');
+     });
+
+    $('select').on('selectric-close', function(event, element, selectric){
+        $('.selectric .button').removeClass('button--open');
+     });
+  });
+
 });
