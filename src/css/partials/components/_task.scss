@@ -5,3 +5,41 @@
     padding-right: 25px;
   }
 }
+
+.task-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  color: #999;
+  &__wrapper {
+    flex: 0 0 50%;
+    padding-right: 40px;
+  }
+  &__btn-inner {
+    flex: 0 0 35%;
+    padding-left: 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__inner {
+    flex: 0 0 15%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__name {
+    margin: 0;
+    padding-left: 10px;
+  }
+  &__points {
+    padding-right: 10px;
+  }
+}

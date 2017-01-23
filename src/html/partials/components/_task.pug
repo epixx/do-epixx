@@ -1,0 +1,19 @@
+include ../abstracts/bemto/bemto.pug
+
+//Станица заданий
+
++b.HEADER.task-header
+  +e.wrapper
+    +e.P.name 5. Модульные сетки
+    select
+      option 2. Построить первую сетку
+      option 3. Построить первую сетку
+      option 4. Построить первую сетку
+      option 5. Построить первую сетку
+  +e.inner
+    +e.points 4пт
+    +e.status Выполняется
+  +e.btn-inner
+    +b.A.btn--border-orange(href="#") Сохранить
+    +b.A.btn--orange(href="#") Отправить на проверку
+
