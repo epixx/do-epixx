@@ -2,7 +2,7 @@
 
 .aside-nav {
   flex: 0 0 215px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $dark-blue;
   padding: 20px 0;
   color: #96989c;

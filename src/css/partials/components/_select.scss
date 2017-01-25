@@ -192,6 +192,10 @@ $selectric-inner-height:    $selectric-height - ($selectric-border-width * 2) !d
     bottom: 100%;
   }
 
+  ul {
+    background-color: $white;
+  }
+
   ul, li {
     list-style: none;
     padding: 0;

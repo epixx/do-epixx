@@ -470,8 +470,11 @@ a {
   font-style: italic; }
 
 iframe {
-  border: 1px solid #aaabae;
-  border-radius: 5px; }
+  border: none;
+  outline: none;
+  width: calc(100% - 40px);
+  height: 200px;
+  margin: 10px 20px; }
 
 blockquote {
   font-size: 16px;
@@ -693,8 +696,30 @@ input.error {
   -ms-flex-pack: end;
       justify-content: flex-end; }
 
-.task__inner {
-  padding-right: 25px; }
+.task {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .task__wrapper {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    border-left: 1px solid #dcdcdc; }
+  .task__inner {
+    padding-right: 25px; }
+  .task__title {
+    background-color: #e8e8e8;
+    min-height: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding-left: 20px; }
 
 .task-header {
   display: -moz-flex;
@@ -704,7 +729,7 @@ input.error {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 20px;
   -ms-flex-align: center;
       align-items: center;
   color: #999; }
@@ -731,10 +756,12 @@ input.error {
     -ms-flex-pack: start;
         justify-content: flex-start; }
   .task-header__name {
-    margin: 0;
-    padding-left: 10px; }
+    margin: 0; }
   .task-header__points {
-    padding-right: 10px; }
+    padding-right: 5px;
+    border-right: 1px solid #e8e8e8;
+    margin-right: 5px;
+    padding-left: 20px; }
 
 .progress-bar__first-layer {
   background-color: #aaabae;
@@ -874,7 +901,7 @@ input.error {
 .aside-nav {
   -ms-flex: 0 0 215px;
       flex: 0 0 215px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #303641;
   padding: 20px 0;
   color: #96989c;
@@ -1292,6 +1319,8 @@ main {
   .selectric-above .selectric-items {
     top: auto;
     bottom: 100%; }
+  .selectric-items ul {
+    background-color: #ffffff; }
   .selectric-items ul, .selectric-items li {
     list-style: none;
     padding: 0;
@@ -1340,7 +1369,7 @@ main {
 .aside-nav {
   -ms-flex: 0 0 215px;
       flex: 0 0 215px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #303641;
   padding: 20px 0;
   color: #96989c;

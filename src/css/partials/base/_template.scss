@@ -61,8 +61,13 @@ a {
 }
 
 iframe {
-  border: 1px solid $light-grey;
-  border-radius: 5px;
+  border: none;
+  outline: none;
+  // border: 1px solid $light-grey;
+  // border-radius: 5px;
+  width: calc(100% - 40px);
+  height: 200px;
+  margin: 10px 20px;
 }
 
 blockquote {

@@ -1,8 +1,26 @@
 //Task
 
 .task {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  &__wrapper {
+    flex: 0 0 50%;
+    border-left: 1px solid #dcdcdc;
+  }
   &__inner {
     padding-right: 25px;
+  }
+  &__title {
+    background-color: #e8e8e8;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 }
 
@@ -13,7 +31,7 @@
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 20px;
   align-items: center;
   color: #999;
   &__wrapper {
@@ -37,9 +55,12 @@
   }
   &__name {
     margin: 0;
-    padding-left: 10px;
+    // padding-left: 10px;
   }
   &__points {
-    padding-right: 10px;
+    padding-right: 5px;
+    border-right: 1px solid #e8e8e8;
+    margin-right: 5px;
+    padding-left: 20px;
   }
 }
