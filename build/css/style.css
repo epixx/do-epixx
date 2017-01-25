@@ -731,16 +731,18 @@ input.error {
   .task__item {
     color: #999; }
   .task__content-wrapper {
-    padding: 20px; }
+    padding: 10px 20px; }
 
 .result,
-.code {
+.code,
+.check {
   -ms-flex: 0 0 50%;
       flex: 0 0 50%;
   border-left: 1px solid #dcdcdc;
   min-height: 220px; }
   .result__title,
-  .code__title {
+  .code__title,
+  .check__title {
     background-color: #e8e8e8;
     min-height: 60px;
     display: -ms-flexbox;
@@ -751,27 +753,59 @@ input.error {
         justify-content: space-between;
     padding: 0 20px; }
   .result__list,
-  .code__list {
+  .code__list,
+  .check__list {
     padding: 0; }
   .result__link,
-  .code__link {
+  .code__link,
+  .check__link {
     display: inline-block;
     padding-right: 30px; }
     .result__link--active .result__item,
     .result__link--active .code__item,
+    .result__link--active .check__item,
     .code__link--active .result__item,
-    .code__link--active .code__item {
+    .code__link--active .code__item,
+    .code__link--active .check__item,
+    .check__link--active .result__item,
+    .check__link--active .code__item,
+    .check__link--active .check__item {
       color: #000000; }
   .result__item,
-  .code__item {
+  .code__item,
+  .check__item {
     color: #999; }
+    .result__item span,
+    .code__item span,
+    .check__item span {
+      color: #ff9600; }
   .result__content-wrapper,
-  .code__content-wrapper {
+  .code__content-wrapper,
+  .check__content-wrapper {
     display: none;
-    padding: 20px; }
+    padding: 10px 20px; }
     .result__content-wrapper--active,
-    .code__content-wrapper--active {
+    .code__content-wrapper--active,
+    .check__content-wrapper--active {
       display: block; }
+
+.review {
+  list-style-type: none;
+  padding: 0; }
+  .review__item {
+    padding: 3px 25px;
+    position: relative; }
+    .review__item:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      background-color: #999;
+      bottom: 9px; }
+    .review__item--active:before {
+      background-color: #00a651; }
 
 .task-header {
   display: -moz-flex;

@@ -55,20 +55,21 @@ include ../abstracts/bemto/bemto.pug
         p Приветики
       +e.content-wrapper(id="code3")
         p Если ты видишь эту надпись, то все работет норм
-  +e.wrapper--tabs3
+  +b.check
     +e.title
       +e.UL.list
         +e.LI.link--active
-          +e.A.item(href="#tab1") HTML
+          +e.A.item(href="#check1") Проверка
         +e.LI.link
-          +e.A.item(href="#tab1") SCC
-        +e.LI.link
-          +e.A.item(href="#tab1") JS
+          +e.A.item(href="#check2") Комментраии
+            span (2)
+      +b.A.btn--border-orange.--passive(href="#") Проверить
     +e.contant
-      +e.content-wrapper--active(id="tab1")
-        //- iframe
-        p А вэтом случае надпись исчезает и больше ничего не происходит, разница в наличии кнопки О_О
-      +e.content-wrapper(id="tab2")
+      +e.content-wrapper--active(id="check1")
+        +b.UL.review
+          +e.LI.item--active Первое условие выполнено
+          +e.LI.item--active Второе условие выполнено
+          +e.LI.item Третье условие выполнено
+          +e.LI.item Четвертое условие выполнено
+      +e.content-wrapper(id="check2")
         p Приветики
-      +e.content-wrapper(id="tab3")
-        p Если ты видишь эту надпись, то все работет норм

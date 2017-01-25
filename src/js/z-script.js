@@ -58,4 +58,25 @@ jQuery(document).ready(function($){
   $(link_href).addClass('code__content-wrapper--active');
   });
 
+    //Табчики для окошка проверки(блок Проверка-Комментари)
+
+  $('.check__item').on('click', function(e){
+  e.preventDefault();
+
+  $(this)
+    .closest('.check__list')
+    .find('.check__link.check__link--active')
+    .removeClass('check__link--active');
+  $(this)
+   .closest('.check__link')
+   .addClass('check__link--active');
+
+  $(this)
+   .closest('.check')
+   .find('.check__content-wrapper.check__content-wrapper--active')
+   .removeClass('check__content-wrapper--active');
+  link_href = $(this).attr('href');
+  $(link_href).addClass('check__content-wrapper--active');
+  });
+
 });
