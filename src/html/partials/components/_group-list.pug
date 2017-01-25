@@ -1,0 +1,111 @@
+include ../abstracts/bemto/bemto.pug
+
+
++b.group-list
+  +e.header
+    h3.bold Группы
+  +b.group-table
+    +e.header
+      +e.direction
+        p.bold Направление
+      +e.date
+        p.bold Дата
+      +e.weekday
+        p.bold День недели
+      +e.group
+        p.bold Группа
+      +e.curator
+        p.bold Куратор
+      +e.status
+        p.bold Статус
+    +e.row
+      +e.direction
+        +e.P.direction-text Веб-дизайн
+      +e.date
+        p 11.01.17 - 20.02.17
+      +e.weekday
+        p пн/чт
+      +e.group
+        p А11
+      +e.curator
+        p Ирина Соколова
+      +e.status
+        p Идет
+    +e.row
+      +e.direction
+        +e.P.direction-text Веб-дизайн
+      +e.date
+        p 11.01.17 - 20.02.17
+      +e.weekday
+        p пн/чт
+      +e.group
+        p А11
+      +e.curator
+        p Ирина Соколова
+      +e.status
+        p Идет
+    +e.row
+      +e.direction
+        +e.P.direction-text Управление проектами
+      +e.date
+        p 11.01.17 - 20.02.17
+      +e.weekday
+        p пн/чт
+      +e.group
+        p А11
+      +e.curator
+        p Ирина Соколова
+      +e.status
+        p Идет
+    +e.row
+      +e.direction
+        +e.P.direction-text Интернет Маркетинг
+      +e.date
+        p 11.01.17 - 20.02.17
+      +e.weekday
+        p пн/чт
+      +e.group
+        p R2D2
+      +e.curator
+        p Ника Сошникова
+      +e.status
+        p Идет
+    +e.row
+      +e.direction
+        +e.P.direction-text Front-end
+      +e.date
+        p 11.01.17 - 20.02.17
+      +e.weekday
+        p пн/чт/пт/вс
+      +e.group
+        p А11
+      +e.curator
+        p А что если у куратора имя с множеством букв?
+      +e.status
+        p Идет
+    +e.row--open
+      +e.direction
+        +e.P.direction-text Веб-дизайн
+      +e.date
+        p 11.01.17 - 20.02.17
+      +e.weekday
+        p пн/чт
+      +e.group
+        p А11
+      +e.curator
+        p Ирина Соколова
+      +e.status
+        p Набор открыт
+    +e.row--close
+      +e.direction
+        +e.P.direction-text А что если у курса будет очень длинное название?
+      +e.date
+        p 11.01.17 - 20.02.17
+      +e.weekday
+        p пн/чт
+      +e.group
+        p А11
+      +e.curator
+        p Ирина Соколова
+      +e.status
+        p Набор закрыт
