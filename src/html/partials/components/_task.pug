@@ -20,16 +20,55 @@ include ../abstracts/bemto/bemto.pug
   +e.wrapper
     +e.title
       +e.P.text Образец
-    iframe
-  +e.wrapper
+    +e.content-wrapper
+      iframe
+  +b.result
     +e.title
-      +e.P.text НЕ Образец
-    iframe
-  +e.wrapper
+      +e.UL.list
+        +e.LI.link--active
+          +e.A.item(href="#result1") Результат
+        +e.LI.link
+          +e.A.item(href="#result2") Теория
+        +e.LI.link
+          +e.A.item(href="#result3") Подсказка
+      +b.A.btn--border-orange.--passive(href="#") Запустить
+    +e.contant
+      +e.content-wrapper--active(id="result1")
+        iframe
+      +e.content-wrapper(id="result2")
+        p Приветики
+      +e.content-wrapper(id="result3")
+        p Если ты видишь эту надпись, то все работет норм
+  +b.code
     +e.title
-      +e.P.text Образец
-    iframe
-  +e.wrapper
+      +e.UL.list
+        +e.LI.link--active
+          +e.A.item(href="#code1") HTML
+        +e.LI.link
+          +e.A.item(href="#code2") SCC
+        +e.LI.link
+          +e.A.item(href="#code3") JS
+    +e.contant
+      +e.content-wrapper--active(id="code1")
+        iframe
+      +e.content-wrapper(id="code2")
+        p Приветики
+      +e.content-wrapper(id="code3")
+        p Если ты видишь эту надпись, то все работет норм
+  +e.wrapper--tabs3
     +e.title
-      +e.P.text НЕ Образец
-    iframe
+      +e.UL.list
+        +e.LI.link--active
+          +e.A.item(href="#tab1") HTML
+        +e.LI.link
+          +e.A.item(href="#tab1") SCC
+        +e.LI.link
+          +e.A.item(href="#tab1") JS
+    +e.contant
+      +e.content-wrapper--active(id="tab1")
+        //- iframe
+        p А вэтом случае надпись исчезает и больше ничего не происходит, разница в наличии кнопки О_О
+      +e.content-wrapper(id="tab2")
+        p Приветики
+      +e.content-wrapper(id="tab3")
+        p Если ты видишь эту надпись, то все работет норм
