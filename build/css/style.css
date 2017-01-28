@@ -1727,3 +1727,36 @@ main {
       color: #285a99; }
     .group-table__row--open .group-table__direction-text:before {
       background-color: #285a99; }
+
+.track-tabs__list {
+  list-style-type: none;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+  margin: 0 0 0 30px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e8e8e8; }
+
+.track-tabs__item {
+  padding-right: 45px;
+  position: relative; }
+  .track-tabs__item a {
+    color: #929295;
+    font-size: 16px; }
+  .track-tabs__item--active a {
+    color: #000000; }
+  .track-tabs__item--active:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: calc(100% - 45px);
+    background-color: #00a651;
+    bottom: -15px; }
+
+.track-tabs__inner {
+  display: none; }
+  .track-tabs__inner--active {
+    display: block; }

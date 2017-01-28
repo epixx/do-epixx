@@ -79,4 +79,25 @@ jQuery(document).ready(function($){
   $(link_href).addClass('check__content-wrapper--active');
   });
 
+    //Табчики для переключения между окнами Задания - Материалы - Вопросы
+
+  $('.track-tabs__link').on('click', function(e){
+  e.preventDefault();
+
+  $(this)
+    .closest('.track-tabs__list')
+    .find('.track-tabs__item.track-tabs__item--active')
+    .removeClass('track-tabs__item--active');
+  $(this)
+   .closest('.track-tabs__item')
+   .addClass('track-tabs__item--active');
+
+  $(this)
+   .closest('.track-tabs')
+   .find('.track-tabs__inner.track-tabs__inner--active')
+   .removeClass('track-tabs__inner--active');
+  link_href = $(this).attr('href');
+  $(link_href).addClass('track-tabs__inner--active');
+  });
+
 });

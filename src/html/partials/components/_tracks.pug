@@ -10,70 +10,23 @@ include ../abstracts/bemto/bemto.pug
         +e.second-layer(style="width: 46%")
   +e.wrapper
     form(action="" method="")
-      select 4.Инфостиль
-        option one
-        option one
-        option one
-+b.track-contant
-  h1.bold Задачи
-  +e.wrapper--done
-    +e.pin-box
-      +e.pin
-    +e.title-box
-      +e.A.title(href="#") 1. Привести к информационному стилю
-    +e.complexity-box
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-    +e.status-box
-      +e.P.status Выполнено
-    +e.comment-box
-      +e.A.comment(href="#") 0
-  +e.wrapper
-    +e.pin-box
-      +e.pin
-    +e.title-box
-      +e.A.title(href="#") 2. Привести к информационному стилю. Привести к информационному стилю. Привести к информационному стилю. Привести к информационному стилю. Привести к информационному стилю. Привести к информационному стилю.
-    +e.complexity-box
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-    +e.status-box
-      +e.P.status На проверке
-    +e.comment-box
-      +e.A.comment(href="#") 0
-  +e.wrapper
-    +e.pin-box
-      +e.pin
-    +e.title-box
-      +e.A.title(href="#") 3. Привести к информационному стилю
-    +e.complexity-box
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-    +e.status-box
-      +e.P.status Выполняется
-    +e.comment-box
-      +e.A.comment--warning(href="#") 55
-  +e.wrapper
-    +e.pin-box
-      +e.pin
-    +e.title-box
-      +e.A.title(href="#") 4. Привести к информационному стилю
-    +e.complexity-box
-    +e.status-box
-      +e.P.status Не выполнялось
-    +e.comment-box
-      +e.A.comment(href="#") 0
-  +e.wrapper
-    +e.pin-box
-      +e.pin
-    +e.title-box
-      +e.A.title(href="#") 5. Привести к информационному стилю
-    +e.complexity-box
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-      +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
-    +e.status-box
-      +e.P.status Выполняется
-    +e.comment-box
-      +e.A.comment--warning(href="#") 4
+      select
+        option 4.Инфостиль
+        option 4.Инфостиль Инфостиль Инфостиль
+        option 4.Инфостиль Инфостиль
+
++b.track-tabs
+  +e.UL.list
+    +e.LI.item--active
+      +e.A.link(href="#track-tabs1") Задания
+    +e.LI.item
+      +e.A.link(href="#track-tabs2") Материалы
+    +e.LI.item
+      +e.A.link(href="#track-tabs3") Вопросы
+  +e.contant
+    +e.inner--active(id="track-tabs1")
+      include track-tabs/_track-contant.pug
+    .track-tabs__inner(id="track-tabs2")
+      p Оно живое
+    .track-tabs__inner(id="track-tabs3")
+      p Да точно живое
