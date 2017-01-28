@@ -100,4 +100,38 @@ jQuery(document).ready(function($){
   $(link_href).addClass('track-tabs__inner--active');
   });
 
+    //Табчики для переключения между окнами Занятия - Задания - Правки - Тьютор
+
+  $('.group-tabs__link').on('click', function(e){
+  e.preventDefault();
+
+  $(this)
+    .closest('.group-tabs__list')
+    .find('.group-tabs__item.group-tabs__item--active')
+    .removeClass('group-tabs__item--active');
+  $(this)
+   .closest('.group-tabs__item')
+   .addClass('group-tabs__item--active');
+
+  $(this)
+   .closest('.group-tabs')
+   .find('.group-tabs__inner.group-tabs__inner--active')
+   .removeClass('group-tabs__inner--active');
+  link_href = $(this).attr('href');
+  $(link_href).addClass('group-tabs__inner--active');
+  });
+
+        $('.group-schedule__title').click(function(e){
+    e.preventDefault();
+    if($(this).next('.group-schedule__table').is(":visible")) {
+      $(this).next('.group-schedule__table').slideUp();
+      $(this).addClass('group-schedule__title--close');
+    } else {
+      $(this).closest('.group-schedule__accordion').find('.group-schedule__table').slideUp();
+      $(this).closest('.group-schedule__accordion').find('.group-schedule__table').addClass('group-schedule__title--close');
+      $(this).next('.group-schedule__table').slideDown();
+      $(this).removeClass('group-schedule__title--close');
+    }
+  });
+
 });

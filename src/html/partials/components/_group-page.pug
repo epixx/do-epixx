@@ -1,0 +1,28 @@
+include ../abstracts/bemto/bemto.pug
+
+//Страница группы
+
++b.HEADER.group-page-header
+  +e.wrapper
+    h3.bold Группа 314
+    p Маркетинг
+
++b.group-tabs
+  +e.UL.list
+    +e.LI.item--active
+      +e.A.link(href="#group-tabs1") Занятия
+    +e.LI.item
+      +e.A.link(href="#group-tabs2") Задания
+    +e.LI.item
+      +e.A.link(href="#group-tabs3") Правки
+    +e.LI.item
+      +e.A.link(href="#group-tabs3") Тьютор
+  +e.contant
+    +e.inner--active(id="group-tabs1")
+      include group-page/_group-schedule.pug
+    .group-tabs__inner(id="group-tabs2")
+      p Оно живое
+    .group-tabs__inner(id="group-tabs3")
+      p Да точно живое
+    .group-tabs__inner(id="group-tabs4")
+      p ня ня ня ня
