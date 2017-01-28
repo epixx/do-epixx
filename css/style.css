@@ -1245,10 +1245,27 @@ main {
         border-left: 20px solid #aaabae; }
 
 .track-contant__wrapper--done .track-contant__pin {
-  background-color: #aaabae; }
+  background-color: transparent;
+  background-image: url(../img/done.png);
+  background-repeat: no-repeat;
+  border-radius: 0;
+  height: 15px;
+  width: 15px; }
 
 .track-contant__wrapper--done .track-contant__title {
   color: #aaabae; }
+
+.track-contant__wrapper--edit .track-contant__pin {
+  background-color: #d4521b; }
+
+.track-contant__wrapper--edit .track-contant__status {
+  color: #d4521b; }
+
+.track-contant__wrapper--progress .track-contant__pin {
+  background-color: #285a99; }
+
+.track-contant__wrapper--passive .track-contant__pin {
+  background-color: #aaabae; }
 
 .track-contant__comment--warning {
   position: relative;
@@ -1727,3 +1744,36 @@ main {
       color: #285a99; }
     .group-table__row--open .group-table__direction-text:before {
       background-color: #285a99; }
+
+.track-tabs__list {
+  list-style-type: none;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+  margin: 0 0 0 30px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e8e8e8; }
+
+.track-tabs__item {
+  padding-right: 45px;
+  position: relative; }
+  .track-tabs__item a {
+    color: #929295;
+    font-size: 16px; }
+  .track-tabs__item--active a {
+    color: #000000; }
+  .track-tabs__item--active:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: calc(100% - 45px);
+    background-color: #00a651;
+    bottom: -15px; }
+
+.track-tabs__inner {
+  display: none; }
+  .track-tabs__inner--active {
+    display: block; }
