@@ -1777,3 +1777,142 @@ main {
   display: none; }
   .track-tabs__inner--active {
     display: block; }
+
+.group-page-header {
+  min-height: 40px;
+  background-color: #e8e8e8;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 15px 30px;
+  -ms-flex-align: center;
+      align-items: center; }
+  .group-page-header h3 {
+    margin-bottom: 3px; }
+  .group-page-header p {
+    margin: 0; }
+
+.group-tabs__list {
+  list-style-type: none;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+  margin: 0 0 0 30px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e8e8e8; }
+
+.group-tabs__item {
+  padding-right: 45px;
+  position: relative; }
+  .group-tabs__item a {
+    color: #929295;
+    font-size: 16px; }
+  .group-tabs__item--active a {
+    color: #000000; }
+  .group-tabs__item--active:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: calc(100% - 45px);
+    background-color: #00a651;
+    bottom: -15px; }
+
+.group-tabs__inner {
+  display: none; }
+  .group-tabs__inner--active {
+    display: block; }
+
+.group-schedule {
+  padding: 20px 25px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .group-schedule__title {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-left: 30px; }
+    .group-schedule__title:after {
+      position: absolute;
+      content: '';
+      height: 20px;
+      width: 20px;
+      border: 1px solid #000000;
+      border-radius: 2px;
+      left: 0;
+      top: 5px; }
+    .group-schedule__title:before {
+      position: absolute;
+      content: '';
+      height: 7px;
+      width: 7px;
+      border-left: 1px solid #000000;
+      border-top: 1px solid #000000;
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      left: 6px;
+      top: 13px;
+      transition: .4s; }
+  .group-schedule__table {
+    display: none; }
+  .group-schedule__row {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    border-bottom: 1px solid #e8e8e8; }
+    .group-schedule__row:last-of-type, .group-schedule__row:first-of-type {
+      border: none; }
+  .group-schedule__number {
+    -ms-flex: 0 0 5%;
+        flex: 0 0 5%; }
+  .group-schedule__subject {
+    -ms-flex: 0 0 30%;
+        flex: 0 0 30%; }
+  .group-schedule__date {
+    -ms-flex: 0 0 15%;
+        flex: 0 0 15%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .group-schedule__time {
+    -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .group-schedule__teacher {
+    -ms-flex: 0 0 10%;
+        flex: 0 0 10%; }
+
+.group-schedule__title.group-schedule__title--close:before {
+  -ms-transform: rotate(225deg);
+      transform: rotate(225deg);
+  top: 10px; }
