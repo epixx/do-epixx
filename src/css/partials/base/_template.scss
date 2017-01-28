@@ -52,6 +52,14 @@ a {
   @include transition();
 }
 
+.page-container {
+  display: flex;
+}
+main {
+  width: 100%;
+  padding-left: 215px;
+}
+
 .bold {
   font-weight: 700;
 }

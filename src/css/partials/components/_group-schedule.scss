@@ -8,7 +8,6 @@
   flex-direction: column;
   &__title {
     position: relative;
-    display: inline-block;
     cursor: pointer;
     margin-top: 10px;
     padding-left: 30px;
@@ -29,9 +28,7 @@
       width: 7px;
       border-left: 1px solid $black;
       border-top: 1px solid $black;
-      transform: rotate(45deg);
       left: 6px;
-      top: 13px;
       transition: .4s;
     }
   }
@@ -87,5 +84,12 @@
   &:before {
     transform: rotate(225deg);
     top: 10px;
+  }
+}
+
+.group-schedule__title {
+  &:before {
+    transform: rotate(45deg);
+    top: 13px;
   }
 }
