@@ -28,7 +28,7 @@ include ../../abstracts/bemto/bemto.pug
       +e.P.status На проверке
     +e.comment-box
       +e.A.comment(href="#") 0
-  +e.wrapper
+  +e.wrapper--edit
     +e.pin-box
       +e.pin
     +e.title-box
@@ -36,10 +36,10 @@ include ../../abstracts/bemto/bemto.pug
     +e.complexity-box
       +e.IMG.complexity(src="img/complexity.png" alt="сложность задния")
     +e.status-box
-      +e.P.status Выполняется
+      +e.P.status Есть правки
     +e.comment-box
       +e.A.comment--warning(href="#") 55
-  +e.wrapper
+  +e.wrapper--passive
     +e.pin-box
       +e.pin
     +e.title-box
@@ -49,7 +49,7 @@ include ../../abstracts/bemto/bemto.pug
       +e.P.status Не выполнялось
     +e.comment-box
       +e.A.comment(href="#") 0
-  +e.wrapper
+  +e.wrapper--progress
     +e.pin-box
       +e.pin
     +e.title-box
