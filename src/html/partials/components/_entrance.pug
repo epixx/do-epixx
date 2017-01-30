@@ -3,18 +3,17 @@ include ../abstracts/bemto/bemto.pug
 //Точка входа
 
 +b.entrance
-  .container
-    +e.inner
-      h1.bold.entrance--white Вход в систему заданий
-      +e.FORM.form
-        +e.warning-inner
-          p Пользователь заблокирован!
-          p Обратитесь к куратору
-        +e.input-inner.--login
-          +e.INPUT.login.has-error
-        +e.input-inner.--password
-          +e.INPUT.password
-        +e.A.recover(href="#") Восстановить пароль
-        button.btn.btn--orange.btn--entrance Вход
-        p.entrance--white Чтобы зарегистрироваться напишите вашему куратору.
+  +e.inner
+    h1.bold.entrance--white Вход в систему заданий
+    +e.FORM.form
+      +e.warning-inner
+        p Пользователь заблокирован!
+        p Обратитесь к куратору
+      +e.input-inner.--login.has-error
+        +e.INPUT.login
+      +e.input-inner.--password
+        +e.INPUT.password
+      +e.A.recover(href="#") Восстановить пароль
+      button.btn.btn--orange.btn--entrance Вход
+      p.entrance--white Чтобы зарегистрироваться напишите вашему куратору.
 

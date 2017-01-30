@@ -468,8 +468,7 @@ a {
   display: flex; }
 
 main {
-  width: 100%;
-  padding-left: 215px; }
+  width: 100%; }
 
 .bold {
   font-weight: 700; }
@@ -878,8 +877,8 @@ input.error {
 
 .entrance {
   background-color: #303641;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -889,11 +888,11 @@ input.error {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  overflow: auto; }
   .entrance input {
     display: inline-block;
     background-color: #303641;
@@ -909,7 +908,9 @@ input.error {
     -ms-flex-direction: column;
         flex-direction: column;
     position: relative;
-    color: #d4521b; }
+    color: #d4521b;
+    -ms-flex-item-align: center;
+        align-self: center; }
     .entrance__warning-inner:before {
       content: '!';
       font-size: 30px;
@@ -991,6 +992,12 @@ input.error {
 .entrance .entrance__login.has-error,
 .entrance .entrance__password.has-error {
   border: 1px solid #d4521b; }
+
+.has-error input {
+  border: 1px solid #d4521b; }
+
+.has-error:before {
+  background-color: #d4521b; }
 
 .aside-nav {
   -ms-flex: 0 0 215px;
